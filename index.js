@@ -2,18 +2,18 @@ const elTitle = document.querySelector(".title");
 const elItemsTitle = document.querySelectorAll(".items__title");
 const elDocTitle = document.querySelector("title");
 
-window.addEventListener("keydown", (e)=>{
-  if(e.code.toString() == "Backspace") {
+window.addEventListener("keydown", (e) => {
+  if (e.code.toString() == "Backspace") {
     elTitle.textContent = "[backspace]";
-  }else if(e.code.toString() == "Space") {
+  } else if (e.code.toString() == "Space") {
     elTitle.textContent = "[space]";
-  }else {
+  } else {
     elTitle.textContent = e.which;
   }
 
-  if(e.key == " "){
+  if (e.key == " ") {
     elItemsTitle[0].textContent = "[space]";
-  }else {
+  } else {
     elItemsTitle[0].textContent = e.key;
   }
   elItemsTitle[1].textContent = e.code;
@@ -24,6 +24,4 @@ window.addEventListener("keydown", (e)=>{
 
 window.addEventListener("keypress", (e) => {
   elItemsTitle[2].textContent = e.ctrlKey;
-  
 });
-
