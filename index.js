@@ -26,3 +26,4 @@ window.addEventListener("keypress", (e) => {
   elItemsTitle[2].textContent = e.ctrlKey;
   
 });
+
